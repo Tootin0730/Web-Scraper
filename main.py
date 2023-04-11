@@ -1,4 +1,6 @@
 my_name = "San"
+age = 18
 dead = False
-print(my_name)
-print(dead)
+
+print("Hello my name is", my_name)
+print("and I'm", age, "years old.")
