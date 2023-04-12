@@ -1,9 +1,7 @@
-def say_hello():
-    print("Hello how r u?")
+def say_hello(user_name):
+    print("Hello", user_name, "how are you?")
 
-def say_bye():
-    print("bye bye")
-
-say_hello()
-say_bye()
-print("Hello world.")
+say_hello("San")
+say_hello("Nico")
+say_hello("Joe")
+say_hello("Joshua")
