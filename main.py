@@ -1,6 +1,8 @@
-my_name = "San"
-age = 18
-dead = False
+def say_hello():
+    print("Hello how r u?")
 
-print("Hello my name is", my_name)
-print("and I'm", age, "years old.")
+say_hello()
+say_hello()
+say_hello()
+say_hello()
+print("Hello world.")
