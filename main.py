@@ -1,7 +1,14 @@
-def tax_cal(money):
-    return money * 0.35
+def make_juice(fruit):
+    return f"{fruit} + juice"
 
-def pay_tax(tax):
-    print("thanks you for paying", tax)
+def add_ice(juice):
+    return f"{juice} + ice"
 
-pay_tax(tax_cal(15000))
+def add_sugar(iced_juice):
+    return f"{iced_juice} + sugar"
+
+juice = "apple"
+cold_juice = add_ice(juice)
+perfect_juice = add_sugar(cold_juice)
+
+print(perfect_juice, "is the perfect juice")
