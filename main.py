@@ -1,3 +1,4 @@
+"""
 from random import randint
 
 user_choice = int(input("Guess a number between 1~50: "))
@@ -10,3 +11,9 @@ elif user_choice > pc_choice:
     print("Lower!", pc_choice)
 elif user_choice < pc_choice:
     print("Higher!", pc_choice)
+"""
+
+distance = 0
+while distance < 20:
+    print("I'm running", distance, "km")
+    distance = distance + 1
