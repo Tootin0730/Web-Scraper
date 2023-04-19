@@ -1,17 +1,8 @@
-from random import randint
+name= "nico"
+print(name.endswith("o"))
 
+street = "straße"
+print(street.casefold())
 
-print("Welcome to the Python Casino.")
-pc_choice = randint(1, 100)
-
-playing = True
-
-while playing:
-    user_choice = int(input("Choose the number in 1-100: "))
-    if user_choice== pc_choice:
-        print("You won!")
-        playing = False
-    elif user_choice > pc_choice:
-        print("Lower")
-    elif user_choice < pc_choice:
-        print("Higher!")
+name = "star"
+print(name.replace("", "!"))
