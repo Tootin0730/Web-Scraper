@@ -1,19 +1,17 @@
-"""
 from random import randint
 
-user_choice = int(input("Guess a number between 1~50: "))
 
-pc_choice = randint(1, 50)
+print("Welcome to the Python Casino.")
+pc_choice = randint(1, 100)
 
-if user_choice == pc_choice:
-    print("You won!")
-elif user_choice > pc_choice:
-    print("Lower!", pc_choice)
-elif user_choice < pc_choice:
-    print("Higher!", pc_choice)
-"""
+playing = True
 
-distance = 0
-while distance < 20:
-    print("I'm running", distance, "km")
-    distance = distance + 1
+while playing:
+    user_choice = int(input("Choose the number in 1-100: "))
+    if user_choice== pc_choice:
+        print("You won!")
+        playing = False
+    elif user_choice > pc_choice:
+        print("Lower")
+    elif user_choice < pc_choice:
+        print("Higher!")
