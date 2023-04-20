@@ -1,3 +1,4 @@
-days_of_week = [1, 2, 3, True, False, "hi", "black", [1, 2, 3, [False, True]]]
-print(days_of_week[3])
-print(days_of_week[7])
+days = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+
+print(days)
+print(days[3])
