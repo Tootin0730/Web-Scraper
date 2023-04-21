@@ -3,7 +3,14 @@ player = {
     'age': 18,
     'alive': True,
     'fav_food': ["Pizza","Beef"],
+    'friend': {
+        'name': 'Will',
+        'fav_food': ["Apple"],
+    }
 }
-player['fav_food'].append("Noodles")
-print(player.get('fav_food'))
-print(player['fav_food'])
+
+player['fav_food'] = "apple"
+player.pop("alive")
+player["friend"]['fav_food'].append("Banana")
+
+print(player)
