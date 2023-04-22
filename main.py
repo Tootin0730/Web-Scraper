@@ -1,16 +1,10 @@
-player = {
-    'name': 'San',
-    'age': 18,
-    'alive': True,
-    'fav_food': ["Pizza","Beef"],
-    'friend': {
-        'name': 'Will',
-        'fav_food': ["Apple"],
-    }
+websites = {
+    "Google.com",
+    "Airbnb.com",
+    "Twitter.com",
+    "Facebook.com",
+    "Tiktok.com"
 }
 
-player['fav_food'] = "apple"
-player.pop("alive")
-player["friend"]['fav_food'].append("Banana")
-
-print(player)
+for website in websites:
+    print(website)
