@@ -1,3 +1,5 @@
+from requests import get
+# installed requests
 websites = {
     "google.com",
     "https://airbnb.com",
