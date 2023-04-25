@@ -19,4 +19,4 @@ for website in websites:
     else:
         results[website] = "FAILED"
         
-    print(website)
+    print(results)
