@@ -1,12 +1,20 @@
 from requests import get
 from bs4 import BeautifulSoup
 
-base_url = "https://weworkremotely.com/remote-jobs/search?term="
+main_url = "https://weworkremotely.com/remote-jobs/search?term="
+
 search_term = "python"
 
-response = get(f"{base_url}{search_term}")
-if response.status_code != 200:
+response = get(f"{main_url}{search_term}")
+
+if not response.status_code == 200:
     print("Can't request the website!")
 else:
     soup = BeautifulSoup(response.text ,"html.parser")
     jobs = soup.find_all('section', class_="jobs")
+    for jobs_section in jobs:
+        job_post = jobs_section.find_all("li")
+        job_post.pop(-1)
+        for post in job_post:
+            print(post)
+            print("/////////////")
